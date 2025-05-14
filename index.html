@@ -2,54 +2,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Metadata, fonts, Tailwind setup, and custom styles here -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>aicreative</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.0/remixicon.min.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <!-- Header -->
-    <header class="fixed top-0 left-0 w-full z-50 bg-opacity-80 backdrop-blur-md bg-secondary">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex items-center justify-between">
-                <a href="#" class="flex items-center space-x-2">
-                    <img src="images/aicreative_logo.jpg" alt="aicreative logo" class="h-10 w-10 rounded">
-                    <span class="text-xl font-semibold text-white">aicreative</span>
-                </a>
-                <nav class="hidden md:flex items-center space-x-8">
-                    <a href="#" class="nav-link text-white text-sm font-medium">Home</a>
-                    <a href="#" class="nav-link text-white text-sm font-medium">Products</a>
-                    <a href="#" class="nav-link text-white text-sm font-medium">About</a>
-                    <a href="#" class="nav-link text-white text-sm font-medium">Testimonials</a>
-                    <a href="#" class="nav-link text-white text-sm font-medium">Contact</a>
-                </nav>
-                <div class="flex items-center space-x-4">
-                    <button class="w-10 h-10 flex items-center justify-center text-white">
-                        <i class="ri-search-line ri-lg"></i>
-                    </button>
-                    <button class="w-10 h-10 flex items-center justify-center text-white">
-                        <i class="ri-shopping-bag-line ri-lg"></i>
-                    </button>
-                    <button class="md:hidden w-10 h-10 flex items-center justify-center text-white">
-                        <i class="ri-menu-line ri-lg"></i>
-                    </button>
-                </div>
-            </div>
+<body class="bg-black text-white">
+    <header class="p-4 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <img src="images/aicreative_logo.jpg" alt="logo" class="h-8">
+            <span class="text-xl font-semibold">aicreative</span>
         </div>
+        <nav class="space-x-4">
+            <a href="#" class="hover:text-cyan-300">Home</a>
+            <a href="#" class="hover:text-cyan-300">Products</a>
+            <a href="#" class="hover:text-cyan-300">About</a>
+            <a href="#" class="hover:text-cyan-300">Testimonials</a>
+            <a href="#" class="hover:text-cyan-300">Contact</a>
+        </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-section h-screen flex items-center">
-        <div class="container mx-auto px-6 w-full">
-            <div class="max-w-2xl">
-                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">Innovation meets elegance</h1>
-                <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-lg">Discover our collection of premium lifestyle products designed for the modern connoisseur.</p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="https://smartstore.naver.com/onyoumall" target="_blank" class="cta-button bg-primary text-black font-semibold py-4 px-8 !rounded-button whitespace-nowrap">Explore Collection</a>
-                    <button class="border border-white text-white font-semibold py-4 px-8 !rounded-button hover:bg-white hover:text-black transition-colors duration-300 whitespace-nowrap">Watch Video</button>
-                </div>
-            </div>
-        </div>
-        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 scroll-indicator">
-            <i class="ri-arrow-down-line ri-2x text-primary"></i>
+    <section class="text-center py-20 px-6">
+        <h1 class="text-5xl font-bold mb-4">Innovation meets elegance</h1>
+        <p class="text-lg mb-8 max-w-xl mx-auto text-gray-300">
+            Discover our collection of premium lifestyle products designed for the modern connoisseur.
+        </p>
+        <div class="flex justify-center gap-4">
+            <a href="https://smartstore.naver.com/onyoumall" class="bg-cyan-300 text-black font-semibold py-3 px-6 rounded hover:bg-white">Explore Collection</a>
+            <button class="border border-white py-3 px-6 rounded hover:bg-white hover:text-black">Watch Video</button>
         </div>
     </section>
+
+    <section class="bg-gray-900 py-20 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center">
+            <div>
+                <i class="ri-leaf-line text-cyan-300 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Eco-Friendly Materials</h3>
+                <p class="text-gray-400">Crafted from sustainable materials without compromising quality.</p>
+            </div>
+            <div>
+                <i class="ri-bluetooth-line text-cyan-300 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Seamless Connectivity</h3>
+                <p class="text-gray-400">Advanced wireless tech that blends with your digital lifestyle.</p>
+            </div>
+            <div>
+                <i class="ri-battery-charge-line text-cyan-300 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Extended Battery Life</h3>
+                <p class="text-gray-400">Power-efficient system that keeps you going all day.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center text-sm text-gray-500 py-6 border-t border-gray-800">
+        <p>&copy; 2025 aicreative. All rights reserved.</p>
+    </footer>
 </body>
 </html>
