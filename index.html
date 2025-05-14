@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata, fonts, Tailwind setup, and custom styles here -->
+</head>
+<body>
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-opacity-80 backdrop-blur-md bg-secondary">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#" class="flex items-center space-x-2">
+                    <img src="images/aicreative_logo.jpg" alt="aicreative logo" class="h-10 w-10 rounded">
+                    <span class="text-xl font-semibold text-white">aicreative</span>
+                </a>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="nav-link text-white text-sm font-medium">Home</a>
+                    <a href="#" class="nav-link text-white text-sm font-medium">Products</a>
+                    <a href="#" class="nav-link text-white text-sm font-medium">About</a>
+                    <a href="#" class="nav-link text-white text-sm font-medium">Testimonials</a>
+                    <a href="#" class="nav-link text-white text-sm font-medium">Contact</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <button class="w-10 h-10 flex items-center justify-center text-white">
+                        <i class="ri-search-line ri-lg"></i>
+                    </button>
+                    <button class="w-10 h-10 flex items-center justify-center text-white">
+                        <i class="ri-shopping-bag-line ri-lg"></i>
+                    </button>
+                    <button class="md:hidden w-10 h-10 flex items-center justify-center text-white">
+                        <i class="ri-menu-line ri-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section h-screen flex items-center">
+        <div class="container mx-auto px-6 w-full">
+            <div class="max-w-2xl">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">Innovation meets elegance</h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-lg">Discover our collection of premium lifestyle products designed for the modern connoisseur.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://smartstore.naver.com/onyoumall" target="_blank" class="cta-button bg-primary text-black font-semibold py-4 px-8 !rounded-button whitespace-nowrap">Explore Collection</a>
+                    <button class="border border-white text-white font-semibold py-4 px-8 !rounded-button hover:bg-white hover:text-black transition-colors duration-300 whitespace-nowrap">Watch Video</button>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 scroll-indicator">
+            <i class="ri-arrow-down-line ri-2x text-primary"></i>
+        </div>
+    </section>
+</body>
+</html>
